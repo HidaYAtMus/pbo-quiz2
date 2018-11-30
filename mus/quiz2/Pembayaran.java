@@ -32,5 +32,16 @@ public class Pembayaran {
         this.total = total;
     }
     
-    
+    //output pembayaran
+    public String prtDetail(){
+        setTotal();
+        String str = "";
+        str += "Kode\t\t:"+ this.code+"\n";
+        str += " Daftar belanja :\n";
+        for(Item item : this.items){
+            str += "\t"+ item.getNama()+"(x"+ item.getJumlah()+"):"+item.getTotal()+"\n"; 
+        }
+        str += "Total\t\t:"+this.total;
+        return str;
+    }
 }

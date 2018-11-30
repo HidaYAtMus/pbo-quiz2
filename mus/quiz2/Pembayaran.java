@@ -23,4 +23,14 @@ public class Pembayaran {
         this.items = items;
     }
 
+    //setter total
+    public void setTotal() {
+        float total = 0;
+        for(Item item : this.items){
+            total += item.getTotal();
+       }
+        this.total = total;
+    }
+    
+    
 }

@@ -17,4 +17,10 @@ public class Pembayaran {
     //variable total
     private float total;
 
+    //constructor
+    public Pembayaran(String code, ArrayList<Item> items) {
+        this.code = code;
+        this.items = items;
+    }
+
 }

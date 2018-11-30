@@ -75,7 +75,18 @@ public class Transaksi extends javax.swing.JFrame {
     }
     
     //update jumlah 
-    
+    private void updateJumlah(String name, int add) {
+        ArrayList<String> item = new ArrayList<>();
+        for (int i = 0; i < tbModel.getRowCount(); i++){
+            item.add(tbModel.getValueAt(i, 0).toString());
+        }
+        for(int i = 0; i < item.size(); i++) {
+            if(item.get(i).equals(name)) {
+                int jumlah = new Integer(tbModel.getValueAt(i, 2).toString());
+                tbModel.setValueAt(jumlah+add, i, 2);  
+            } 
+        }
+    } 
     
     //mengcek apakah ada duplikasi atau tidak
     private boolean isDuplicate(String name) {

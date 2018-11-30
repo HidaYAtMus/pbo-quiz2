@@ -55,4 +55,9 @@ public class Item {
         this.jumlah = jumlah;
     }
     
+    //method untuk menghitung harga total
+    public float getTotal(){
+        return this.harga * this.jumlah;
+    }
+    
 }

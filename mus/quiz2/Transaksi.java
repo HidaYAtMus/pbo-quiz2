@@ -292,7 +292,7 @@ public class Transaksi extends javax.swing.JFrame {
         newTransaksi();
         this.decId();
     }//GEN-LAST:event_cencelButtonActionPerformed
-
+//
     private void removeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeButtonActionPerformed
         if(listItem.getSelectedRow()<0) { // check if theres a row selected;
             String str = "Pilih item yang ingin dihapus !"; // if theres none, dialog will appear

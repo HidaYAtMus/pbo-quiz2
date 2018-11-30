@@ -60,4 +60,8 @@ public class Item {
         return this.harga * this.jumlah;
     }
     
+    //mengubah ke String
+    public String toString(){
+        return this.nama;
+    }
 }
